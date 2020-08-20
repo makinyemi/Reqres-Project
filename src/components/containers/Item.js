@@ -10,7 +10,7 @@ const CustomItems = (props) => {
 				onChange: (page) => {
 					console.log(page);
 				},
-				pageSize: props.data.length
+				pageSize: 3
 			}}
 			dataSource={props.data}
 			renderItem={(item) => (
