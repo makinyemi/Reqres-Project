@@ -1,11 +1,11 @@
 import React from "react";
-import { Layout, Menu, Breadcrumb } from "antd";
+import { Layout, Breadcrumb } from "antd";
 
 const { Header, Content, Footer } = Layout;
 
 const CustomLayout = (props) => {
 	return (
-		<Layout className="layout">
+		<Layout className="layout" style={{ height: "100%" }}>
 			<Header>
 				<div className="logo" />
 				<h1 style={{ color: "white" }}>Outstrip</h1>
@@ -16,7 +16,7 @@ const CustomLayout = (props) => {
 				</Breadcrumb>
 				<div className="site-layout-content">{props.children}</div>
 			</Content>
-			<Footer style={{ textAlign: "center" }}></Footer>
+			<Footer style={{ textAlign: "center" }}>Made by Michael Akinyemi</Footer>
 		</Layout>
 	);
 };
